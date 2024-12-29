@@ -5,7 +5,7 @@
 %<*readme>
 ___________________
 The complexpolylongdiv package
-v0.1
+v0.2
 
 This package provides a simple interface for typesetting
 (complex) polynomial long division.
@@ -206,7 +206,7 @@ by Vafa Khalighi.
 %-&\underline{x^2-x}\\
 %  -&(1-2i)x+6\\
 %  -&\underline{(1-2i)x-(1-2i)}\\
-%  &7-2i\\
+%  &7-2i
 %\end{complexpolylongdiv}
 %\end{equation}
 %\end{document}
@@ -228,7 +228,7 @@ by Vafa Khalighi.
 %\iffalse
 %<*table>
 %\fi
-%% \CheckSum{51}
+%% \CheckSum{52}
 %% \CharacterTable
 %%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
 %%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
@@ -254,7 +254,7 @@ by Vafa Khalighi.
 %
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{complexpolylongdiv}[2024/12/30 v0.1 Typesetting (complex) polynomial long division]
+\ProvidesPackage{complexpolylongdiv}[2024/12/30 v0.2 Typesetting (complex) polynomial long division]
 \newenvironment{complexpolylongdiv}[1][c]{%
   \let\\\@arraycr
   \if #1t
@@ -275,6 +275,7 @@ by Vafa Khalighi.
       \halign\bgroup
         \hfil$##$&$\,\hphantom{\big)}\mkern2mu ##$\hfil\strut\cr
 }{%
+      \crcr
     \egroup
   \egroup
 }
@@ -310,7 +311,7 @@ x-1&\complexpolyquotient{x^2-2ix+6}\\
 -&\underline{x^2-x}\\
   -&(1-2i)x+6\\
   -&\underline{(1-2i)x-(1-2i)}\\
-  &7-2i\\
+  &7-2i
 \end{complexpolylongdiv}
 \end{equation}
 \end{document}
