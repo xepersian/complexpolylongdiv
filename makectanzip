@@ -3,14 +3,8 @@ chmod -x complexpolylongdiv.dtx
 pdflatex -shell-escape complexpolylongdiv.dtx
 pdflatex -shell-escape complexpolylongdiv.dtx
 pdflatex -shell-escape complexpolylongdiv.dtx
-mkdir -p doc/latex/complexpolylongdiv source/latex/complexpolylongdiv tex/latex/complexpolylongdiv
 mkdir complexpolylongdiv
-mv complexpolylongdiv.sty tex/latex/complexpolylongdiv
-mv complexpolylongdiv.pdf complexpolylongdiv-example.tex README  doc/latex/complexpolylongdiv
-mv complexpolylongdiv.dtx complexpolylongdiv.ins source/latex/complexpolylongdiv
-zip -r complexpolylongdiv-tds doc/latex/complexpolylongdiv source/latex/complexpolylongdiv tex/latex/complexpolylongdiv
-mv complexpolylongdiv-tds.zip complexpolylongdiv.tds.zip
-mv doc/latex/complexpolylongdiv/complexpolylongdiv.pdf doc/latex/complexpolylongdiv/README source/latex/complexpolylongdiv/complexpolylongdiv.dtx complexpolylongdiv
-zip -r complexpolylongdiv complexpolylongdiv.tds.zip complexpolylongdiv
-rm -r doc source tex complexpolylongdiv
-rm *.idx *.out *.toc *.gls *.ilg *.ind *.glo *.hd *.aux *.log complexpolylongdiv.tds.zip
+mv complexpolylongdiv.sty complexpolylongdiv.pdf complexpolylongdiv-example.tex README complexpolylongdiv.dtx complexpolylongdiv.ins complexpolylongdiv
+zip -r complexpolylongdiv complexpolylongdiv
+rm -r complexpolylongdiv
+rm *.idx *.out *.toc *.ilg *.ind *.hd *.aux *.log 
