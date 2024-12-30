@@ -4,7 +4,7 @@ pdflatex -shell-escape complexpolylongdiv.dtx
 pdflatex -shell-escape complexpolylongdiv.dtx
 pdflatex -shell-escape complexpolylongdiv.dtx
 mkdir complexpolylongdiv
-mv complexpolylongdiv.sty complexpolylongdiv.pdf complexpolylongdiv-example.tex README complexpolylongdiv.dtx complexpolylongdiv.ins complexpolylongdiv
+mv complexpolylongdiv.pdf README complexpolylongdiv.dtx complexpolylongdiv.ins complexpolylongdiv
 zip -r complexpolylongdiv complexpolylongdiv
 rm -r complexpolylongdiv
 rm *.idx *.out *.toc *.ilg *.ind *.hd *.aux *.log 
