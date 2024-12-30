@@ -7,4 +7,4 @@ mkdir complexpolylongdiv
 mv complexpolylongdiv.pdf README complexpolylongdiv.dtx complexpolylongdiv.ins complexpolylongdiv
 zip -r complexpolylongdiv complexpolylongdiv
 rm -r complexpolylongdiv
-rm *.idx *.out *.toc *.ilg *.ind *.hd *.aux *.log 
+rm *.idx *.out *.toc *.ilg *.ind *.hd *.aux *.log *.sty *.tex
