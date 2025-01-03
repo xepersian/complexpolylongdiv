@@ -14,7 +14,7 @@ The following example illustrates how the package can be used.
 &x+1-2i \\
 x-1&\complexpolyquotient{x^2-2ix+6}\\
 -&\underline{x^2-x}\\
-  -&(1-2i)x+6\\
+  &(1-2i)x+6\\
   -&\underline{(1-2i)x-(1-2i)}\\
   &7-2i
 \end{complexpolylongdiv}
